@@ -1,4 +1,4 @@
-package com.xw.j2se;
+package com.xw.j2se.structrue;
 
 public class StringLearn {
 
@@ -24,10 +24,14 @@ public class StringLearn {
          */
         String s = "hello world 123";
         int pos = s.indexOf("hello");
-
-        
-
-
+        /*
+            正则匹配
+            ? 0-1次
+            + 1-n次
+            * 任意次
+         */
+        System.out.println(s.matches("^[a-zA-Z0-9]+$"));
+        System.out.println(s.matches("^\\w?\\s\\w?\\s\\d?$"));
 
     }
 
